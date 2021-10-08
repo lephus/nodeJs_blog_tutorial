@@ -1,0 +1,35 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lephus/nodeJs_blog_tutorial.git"
+  },
+  "keywords": [
+    "nodeJs",
+    "tutorial",
+    "nodejs",
+    "leaning",
+    "nodejs",
+    "expressJS",
+    "Express"
+  ],
+  "author": "Phu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lephus/nodeJs_blog_tutorial/issues"
+  },
+  "homepage": "https://github.com/lephus/nodeJs_blog_tutorial#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
