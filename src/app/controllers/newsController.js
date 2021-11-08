@@ -3,12 +3,13 @@ const Course = require('../models/Course');
 
 class NewsController {
   //GET /news
-  index(req, res) {
+  index(req, res, next) {
     Course.find({}, function (error, Courses) {
       if(!error){
         res.json(Courses);
       }else{
-        res.status(400).json({error: "can not get data course"})
+        next(error);
+        //res.status(400).json({error: "can not get data course"})
       }
     });
 
