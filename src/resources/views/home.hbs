@@ -7,8 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>HOME</h1>
+    <div class="mt4 container">
+        <div class="row">
+            {{#each course}}
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="card card-course-item" style="width: 18rem;">
+                    <a href="/course/{{this.slug}}">
+                        <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}">
+
+                    </a>
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/course/{{this.slug}}">{{this.name}}</a></h5>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="#" class="btn btn-primary">HỌC NGAY</a>
+                </div>
+                </div>
+            </div>
+
+            {{/each}}
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+            <div class="col-sm-6 col-lg-3">
+                <div class="card card-course-item" style="width: 18rem;">
+                    <a href="/course/{{course.slug}}">
+                        <img src="{{course.image}}" class="card-img-top" alt="{{course.name}}">
+
+                    </a>
+                <div class="card-body">
+                    <h5 class="card-title"><a href="/course/{{course.slug}}">{{course.name}}</a></h5>
+                    <p class="card-text">{{course.description}}</p>
+                    <a href="#" class="btn btn-primary">CHI TIẾT</a>
+                </div>
+                </div>
+            </div>
+</body>
+</html>
